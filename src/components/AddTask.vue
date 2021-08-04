@@ -30,7 +30,7 @@ export default {
             text: '',
             day: '',
             reminder: false,
-            letters : ['X','Y','Z' ],
+            // letters : ['X','Y','Z' ],
         }
     },
     methods: {
@@ -42,7 +42,7 @@ export default {
             }
 
             const newTask = {
-                id: `AB${Date.now()}${this.letters[Math.floor(Math.random()*this.letters.length)]}`,
+                // id: `AB${Date.now()}${this.letters[Math.floor(Math.random()*this.letters.length)]}`,
                 text: this.text,
                 day: this.day,
                 reminder: this.reminder
