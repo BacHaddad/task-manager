@@ -4,6 +4,8 @@
     <Button  v-if="homePage"
     @toggleAddTask="$emit('show-addTask')"  :color=" showAddTask ? 'red' : 'green' " :text="showAddTask ? 'Close' : 'Add Task' " />
   </header>
+    <i> double click on a task to toggle reminder </i>
+
 </template>
 
 <script>
@@ -36,5 +38,8 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+}
+i {
+  font-size: 12px;
 }
 </style>
